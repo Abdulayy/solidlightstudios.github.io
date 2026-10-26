@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collection - Xenolith</title>
+<meta name="description" content="Selected landscape photographs from the high country by SolidLightStudios.">
+<meta name="theme-color" content="#1A1926">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231A1926'/%3E%3Cpath d='M16 4l10 9-4 15H10L6 13z' fill='%23F49C7A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">Xenolith</a>
+    <div class="header-right">
+      <div class="lang" id="langSwitch" aria-label="Language">
+        <button type="button" data-lang="en" class="active">Eng</button>
+        <span class="sep">/</span>
+        <button type="button" data-lang="uk">Укр</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="collection.html" class="active" data-i18n="nav.collection">Collection</a>
+        <a href="philosophy.html" data-i18n="nav.philosophy">Philosophy</a>
+        <a href="prints.html" data-i18n="nav.prints">Prints</a>
+        <a href="waitlist.html" data-i18n="nav.waitlist">Waitlist</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal" data-i18n="page.collection.title">Collection</h1>
+      <p class="reveal" style="--i:1" data-i18n="page.collection.sub">Selected frames from the high country and surrounding ranges.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <div class="gallery">
+        <button class="shot reveal" style="--i:0" data-title="Mountain Sentinel" data-title-uk="Гірський вартовий" data-sub="Mountain peak" data-sub-uk="Гірська вершина" aria-label="Open Mountain Sentinel">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/26362.jpg" alt="A lone mountain peak catching light" width="1200" height="800" loading="lazy" referrerpolicy="no-referrer" onerror="this.classList.add('failed')">
+          <figcaption><h3 data-i18n="shot1.title">Mountain Sentinel</h3><span data-i18n="shot1.sub">Mountain peak</span></figcaption>
+        </button>
+        <button class="shot reveal" style="--i:1" data-title="Valley Mist" data-title-uk="Туман у долині" data-sub="Morning valley" data-sub-uk="Ранкова долина" aria-label="Open Valley Mist">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/708.jpg" alt="Mist filling a valley between ridges" width="1200" height="800" loading="lazy" referrerpolicy="no-referrer" onerror="this.classList.add('failed')">
+          <figcaption><h3 data-i18n="shot2.title">Valley Mist</h3><span data-i18n="shot2.sub">Morning valley</span></figcaption>
+        </button>
+        <button class="shot reveal" style="--i:2" data-title="First Light" data-title-uk="Перше світло" data-sub="Sunrise ridge" data-sub-uk="Схід на хребті" aria-label="Open First Light">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/7264.jpg" alt="Sunrise over a ridgeline" width="1200" height="800" loading="lazy" referrerpolicy="no-referrer" onerror="this.classList.add('failed')">
+          <figcaption><h3 data-i18n="shot3.title">First Light</h3><span data-i18n="shot3.sub">Sunrise ridge</span></figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year">2026</span> SolidLightStudios INC. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <nav aria-label="Footer">
+      <a href="collection.html" data-i18n="nav.collection">Collection</a>
+      <a href="philosophy.html" data-i18n="nav.philosophy">Philosophy</a>
+      <a href="prints.html" data-i18n="nav.prints">Prints</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="Image viewer">
+  <div class="lb">
+    <button class="close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="prev" id="lbPrev" aria-label="Previous image">&lsaquo;</button>
+    <img id="lbImg" alt="">
+    <p id="lbCap"></p>
+    <button class="next" id="lbNext" aria-label="Next image">&rsaquo;</button>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
